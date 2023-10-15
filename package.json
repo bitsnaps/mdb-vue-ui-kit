@@ -1,11 +1,23 @@
 {
-  "name": "mdb-vue-ui-kit",
+  "name": "mdb-vue-app",
   "version": "4.1.1",
   "type": "module",
-  "main": "js/mdb.umd.min.js",
-  "module": "js/mdb.es.min.js",
-  "repository": "https://github.com/mdbootstrap/mdb-vue-ui-kit.git",
-  "author": "MDBootstrap",
-  "license": "MIT",
-  "types": "types/index.free.d.ts"
+  "homepage": "https://mdbootstrap.com/docs/b5/vue/",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "start": "vite --open"
+  },
+  "dependencies": {
+    "mdb-vue-ui-kit": "4.1.1",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.2.0",
+    "typescript": "^4.9.5",
+    "vite": "^3.2.7",
+    "vue-tsc": "^0.40.13"
+  }
 }
